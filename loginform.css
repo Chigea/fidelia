@@ -1,0 +1,139 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+@font-face {
+    font-family: sans-serif;
+    src: url();
+}
+body {
+    background-color:#fff;
+}
+
+.page {
+    height: 130vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.cover {
+    background-color: red;
+    width: 40em;
+    height: 50em;
+    position: relative;
+    border-radius: 1em;
+    box-shadow: 0 0.188em 1.550em rgb(156, 156, 156);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+
+}
+.alt-login {
+    width: 80%;
+    height: 3em;
+    display: flex;
+    justify-content: space-around;
+}
+.alt-login div {
+    width: 45%;
+    height: 90%;
+    border-radius: 0.25em;
+    background-color:black;
+    background-position: center;
+    background-size: contain;
+    background-repeat : no-repeat;
+    cursor: pointer;   
+}
+.alt-log{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.alt-log .facebook{
+    background: blue;
+    color: #fff;
+    font-size: 20px;
+    padding: 5px 50px;
+    margin-right: 10px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+.alt-log .google{
+    background:rgb(0, 0, 0);
+    color:white;
+    font-size: 20px;
+    padding: 5px 50px;
+    margin-right: 10px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.login-btn{
+    cursor: pointer;
+    padding: 10px 20px;
+    border: 1px solid white;
+    border-radius: 8px ;
+}
+.login-btn:hover{
+    background: #000;
+    color: #fff;
+    transition: .5s;
+}
+
+input {
+    border: none;
+    background: #ccc;
+    height: 4em;
+    width: 80%;
+    border-radius: 0.25em;
+    text-align: center;
+    padding: 2em;
+
+}
+   
+input:focus {
+    outline-color: rgb(0, 0, 0);
+}
+.login-btn {
+    width: 40%;
+    height: 3em;
+    display: flex;
+    justify-content: center;
+    transition: 0.5s;
+    border-radius: 0.25em;
+    cursor: pointer;
+
+}
+.login-btn:hover{ transform: scale(1.25);}
+
+.text {
+    position: relative;
+    bottom: -1em;
+
+}
+.hide {
+ position: absolute ;
+ transform: scale(0);
+}
+.login-popup{
+    position:absolute ; 
+    height: 30em;
+    width: 30em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.25em;
+    background-color: white;
+    color: black;
+    bottom: 0;
+    transform: scale(1);
+    transform: 1.5s
+
+}
